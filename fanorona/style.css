@@ -1,0 +1,124 @@
+/*style du document*/
+body {
+    background-color: rgb(52, 219, 127);
+}
+/*style des joueurs*/
+.p1 {
+    background-color: rgb(231, 106, 106);
+}
+
+.p2 {
+    background-color: rgb(117, 117, 247);
+}
+
+.highlight {
+    background-color: rgb(190, 187, 187);
+}
+
+.active-p1 {
+    background-color: rgb(124, 0, 0);
+}
+
+.active-p2 {
+    background-color: rgb(0, 0, 94);
+}
+
+.player1 {
+    color: black;
+}
+
+.player2 {
+    color: black;
+}
+
+.moving {
+    color: black;
+}
+/*positionnement*/
+.position {
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.top {
+    top: -25px;
+}
+
+.mid {
+    top: 125px;
+}
+
+.bottom {
+    bottom: -25px;
+}
+
+.left {
+    left: -25px;
+}
+
+.center {
+    left: 125px;
+}
+
+.right {
+    right: -25px;
+}
+
+.position:hover {
+    background-color: gray;
+}
+/*structure du tableau*/
+.container {
+    border: 7px solid #FFF;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 75px;
+    position: relative;
+}
+
+
+.hor {
+    background-color: #FFF;
+    height: 7px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+.vert {
+    background-color: #FFF;
+    height: 7px;
+    width: 100%;
+    position: absolute;
+    top: 149px;
+    transform: rotate(90deg);
+    transform-origin: center;
+}
+
+.diag-left{
+    background-color: #FFF;
+    height: 7px;
+    width: 141.42%;
+    position: absolute;
+    top: 149px;
+    left: -64px;
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.diag-right{
+    background-color: #FFF;
+    height: 7px;
+    width: 141.42%;
+    position: absolute;
+    top: 149px;
+    right: -64px;
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
+
+
